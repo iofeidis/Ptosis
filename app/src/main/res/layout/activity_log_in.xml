@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#008975"
+    tools:context="com.example.jason.ptosis.LogIn">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/title_activity_login"
+        android:ems="10"
+        android:hint="Όνομα:"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#ffffff"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44sp"
+        android:ems="10"
+        android:hint="Τηλέφωνο Έκτακτης Ανάγκης:"
+        android:inputType="phone"
+        android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#ffffff"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remembermebutton"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/darker_gray"
+        android:elevation="0dp"
+        android:onClick="onClick"
+        android:text="ΕΙΣΟΔΟΣ"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/logintitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="PTOSIS"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp"
+        android:textStyle="italic" />
+
+    <CheckBox
+        android:id="@+id/remembermebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/phone"
+        android:layout_alignLeft="@+id/phone"
+        android:layout_alignRight="@+id/phone"
+        android:layout_alignStart="@+id/phone"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="13dp"
+        android:buttonTint="?android:attr/navigationBarColor"
+        android:checked="true"
+        android:text="Να με θυμάσαι"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logintitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Εφαρμογή Ανίχνευσης Πτώσεων"
+        android:textAlignment="center"
+        android:textColor="#CFD8DC "
+        android:textSize="18sp" />
+
+</RelativeLayout>

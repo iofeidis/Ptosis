@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#008975"
+    tools:context="com.example.jason.ptosis.History"
+    android:id="@+id/relativeLayout">
+
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="225sp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:headerDividersEnabled="false"
+        android:scrollbars="vertical"
+        android:textAlignment="center"
+        android:theme="@style/AppTheme" />
+
+    <CheckBox
+        android:id="@+id/checkClear"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="58dp"
+        android:layout_toEndOf="@+id/mListView"
+        android:layout_toRightOf="@+id/mListView"
+        android:text="Καθαρισμός στην έξοδο"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:theme="@style/AppTheme" />
+
+
+</RelativeLayout>
